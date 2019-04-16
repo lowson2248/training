@@ -1,7 +1,7 @@
 
 public class SeitoScore {
-	String name;
-	int score;
+	private String name;
+	private int score;
 
 	SeitoScore(String name,int score){
 		this.name = name;
