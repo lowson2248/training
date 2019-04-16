@@ -16,8 +16,8 @@ public class Main {
 
 		//出力
 		for(SeitoScore seito:scores) {
-			if(seito.score > 49) {
-				System.out.println(seito.name + "さんは" + seito.score + "点です。");
+			if(seito.getScore() > 49) {
+				System.out.println(seito.getName() + "さんは" + seito.getScore() + "点です。");
 			}//if END
 		}//for END
 	}
