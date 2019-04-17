@@ -1,9 +1,8 @@
 import java.io.IOException;
 
 public class Main {
-
 	public static void main(String[] args)throws IOException {
-		System.out.println("プログラム:スタート");;
+		System.out.println("プログラム:スタート");
 		throw new IOException();
 	}
 }
