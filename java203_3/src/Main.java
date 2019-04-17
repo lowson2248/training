@@ -15,6 +15,5 @@ public class Main {
 			int num = heroMap.get(hKey);
 			System.out.println(hKey.getName() + "が倒した数=" + num);
 		}//for END
-
 	}
 }
