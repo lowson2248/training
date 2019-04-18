@@ -1,0 +1,1 @@
+enum keyType {PADLOCK,BUTTON,DIAL,FINGER;}
