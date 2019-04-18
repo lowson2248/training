@@ -34,6 +34,11 @@ public class Book implements Comparable<Book>,Cloneable{
 		return result;
 	}//hashCode END
 
+	//toStringのオーバーライド
+	public String toString() {
+		return "書籍名 : " + this.getTitle() + " 発行日 : " + this.getPublishDate() + " コメント : " + this.getComment();
+	}
+
 
 	//equalsのオーバーライド
 	public boolean equals(Object o) {

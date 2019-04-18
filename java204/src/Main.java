@@ -45,7 +45,7 @@ public class Main {
 
 		//book1とbook3は等価なので格納しようとしても無視される
 		for(Book b : set) {
-			System.out.println(b);
+			System.out.println(b.toString());
 		}
 
 		//compareTo
@@ -57,13 +57,15 @@ public class Main {
 		list.add(book4);
 		list.add(book5);
 		System.out.println("ソート前");
+
 		for(Book b : list) {
-			System.out.println(b);
+			System.out.println(b.toString());
 		}
+
 		System.out.println("ソート後");
 		Collections.sort(list);
 		for(Book b : list) {
-			System.out.println(b);
+			System.out.println(b.toString());
 		}
 
 
