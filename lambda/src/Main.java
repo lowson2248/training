@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -24,8 +24,10 @@ public class Main {
 				filterList.add(string);
 			}
 		}*/
-		Stream<String> filterList = stringList.stream().filter(s -> s != null);
 
+		//StreamクラスでfilterListを定義、後にstringListからnullをfilterで除去したものを挿入。
+		List<String> filterList = stringList.stream().filter(s -> s != null && !s.isEmpty()).collect(Collectors.toList());
+		//Stream<String> filterList = stringList.stream().filter(s -> s != null && !s.isEmpty()):
 		//filterListの中身を出力
 		filterList.forEach(s->System.out.print(s));
 	}
